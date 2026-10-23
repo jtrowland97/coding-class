@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Helper</title>
+  <!-- Load Tailwind CSS for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 p-8 font-sans min-h-screen flex justify-center items-center">
+
+  <div class="max-w-md w-full bg-white p-6 rounded-2xl shadow-md border border-slate-200">
+    <h1 class="text-2xl font-bold text-slate-900 mb-2">Software User Guide</h1>
+    <p class="text-slate-600 text-sm mb-6">Click the button below if you need help understanding terms.</p>
+
+    <!-- Button 1: Help Toggle -->
+    <button id="help-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-4 rounded-xl shadow transition-all">
+      ❓ Need Help? Click Me!
+    </button>
+
+    <!-- Hidden Help Box -->
+    <div id="help-box" class="hidden mt-4 p-4 bg-blue-50 border border-blue-200 rounded-xl text-blue-900 text-sm">
+      <strong class="block font-bold mb-1">Quick Tip:</strong>
+      Hover over any button in the app to view keyboard shortcuts!
+    </div>
+
+    <hr class="my-6 border-slate-200">
+
+    <!-- Section 2: Term Definition Card -->
+    <h2 class="text-lg font-bold text-slate-800 mb-2">Technical Glossary</h2>
+    <button id="load-term-btn" class="bg-slate-800 hover:bg-slate-900 text-white font-medium text-xs py-2 px-3 rounded-lg mb-4">
+      📖 Show Definition for "DTO"
+    </button>
+
+    <div id="term-card" class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-500 italic">
+      Click the button above to load term data...
+    </div>
+  </div>
+
+  <!-- LINKING OUR JAVASCRIPT FILE BELOW -->
+  <script src="script.js"></script>
+</body>
+</html>
